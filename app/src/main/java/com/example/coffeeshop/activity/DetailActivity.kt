@@ -52,7 +52,7 @@ class DetailActivity : BaseActivity() {
             Glide.with(context)
                 .load(item.picUrl[0])
                 .apply(RequestOptions.bitmapTransform(RoundedCorners(100)))
-                .to(image)
+                .into(image)
 
             // Size button:
             sizeButton1.setOnClickListener {
